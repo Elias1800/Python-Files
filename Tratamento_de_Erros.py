@@ -1,3 +1,5 @@
+from math import sqrt
+
 #Tratamento de Erros ou Exceçõoes em Python
 
 def div():
@@ -23,6 +25,27 @@ def div():
         finally:
             print("\nPrograma Finalizado!")
         
+#Tratamento usando raise
+
+def Raiz_Quadrada():
+
+    print("\nStart Programa: Raiz Quadrada\n")
+    while True:
+        n = float(input("Digite um número positivo: "))
+        try:
+            if n < 0:
+                raise ArithmeticError
+
+        except ArithmeticError:
+            print("Você digitou um valor negativo, tente novamente!")  
+        else: 
+            print(f"A raiz quadrada de {n} é {sqrt(n):.2f}\n")
+            break
+        finally:
+            print("Programa Finalizado!")
+
+
+
 if __name__ == "__main__":
-    div()
-    print("\n")
+        div()
+        Raiz_Quadrada()
