@@ -1,9 +1,11 @@
 #Função Fatorial
 def fatorial(n):
     if n == 0 or n == 1: 
+        print(f"1 = ", end="")
         return 1
     else:
-        return n * fatorial(n - 1) 
+        print(f"{n} * ",end="")
+        return  n * fatorial(n - 1) 
 
 #Sequencia Fibonacci 
 def seq_fibonacci(n):
@@ -23,4 +25,5 @@ def fibonacci(n):
     
 if __name__ == '__main__':
     print(fatorial(5))
-    print(seq_fibonacci(5))
+
+    
