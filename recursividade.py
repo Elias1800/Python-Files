@@ -1,3 +1,4 @@
+import os
 #Função Fatorial
 def fatorial(n):
     if n == 0 or n == 1: 
@@ -24,6 +25,56 @@ def fibonacci(n):
         return fibonacci(n - 1) + fibonacci(n - 2)
     
 if __name__ == '__main__':
-    print(fatorial(5))
+    
+    while True:
 
+        print("\n================")
+        print("1. Fatorial")
+        print("2. Fibonacci")
+        print("0. sair")
+        print("================\n")
+
+        op = int(input("Escolha uma opção: "))
+        print('')
+        validador = True
+
+        match op:
+
+            case 1:
+
+                while validador:  
+
+                    try:
+                        entrada = int(input("Insira um valor para fatoração: "))
+
+                    except ValueError:
+                        print("Erro: Digite apenas números inteiros.\n")
+
+                    except RecursionError:
+                        print("Erro: Valor fornecido é muito grande.\n")
+                    
+                    if entrada < 0:
+                        print("Erro: número negativo não possui fatorial.\n")
+                        continue
+
+                    else:
+                        print(fatorial(entrada),"\n")
+
+                        while True:
+
+                            ft_nv = input("Digite S para sair ou N para fazer outra fatoração: ")
+
+                            if ft_nv.lower() == 's': 
+                                os.system('cls')
+                                validador = False
+                                break
+                            elif ft_nv.lower() == 'n':
+                                os.system('cls')
+                                break
+                            else :
+                                print("Erro: Opção invalida!\n")
+            case 0:
+                print("Programa finalizado!")
+                break
+               
     
