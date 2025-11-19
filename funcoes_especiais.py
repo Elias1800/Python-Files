@@ -22,4 +22,15 @@ print(maiusculas)
 numeros = [1,2,3,4,5,6,7,8,9,10]
 
 pares = list(filter(lambda x: x % 2 == 0, numeros))
-print(pares)    
+print(pares) 
+num_impares = list(filter(lambda x: x % 2 != 0, numeros))  
+print(num_impares)
+
+# Função reduce()
+# Sintaxe = reduce(função, sequência, valor_inicial)
+
+from functools import reduce
+
+numeros_1 = [1,2,3,4,5]
+total = reduce(lambda x, y: x + y, numeros_1)
+print(total)
