@@ -16,10 +16,19 @@ class Veiculo:
     def cor_veiculo(self,cor):
         self.__cor = cor
 
+# Heranças
+class Carro(Veiculo):
+    #Classe
+    def __init__(self, nome, marca, fabricante, ano):
+        super().__init__(nome, marca, fabricante, ano)
 
+    # Metodos
+    def carro_andando(self):
+        print(f"O carro está andando!")
 
-#Objetos
-Veiculo1 = Veiculo("Fiat Tourino","Jeep","Fiat",2000)
-print(Veiculo1.ver_dados(),"\n")
-Veiculo1.cor_veiculo("Amarelo")
-print(Veiculo1.ver_dados())
+# Objetos 
+
+Carro = Carro('Camaro','toyota','jep',1800)
+Carro.cor_veiculo('Preto')
+Carro.carro_andando()
+print(Carro.ver_dados())
