@@ -24,11 +24,11 @@ if __name__ == '__main__':
     
     while True:
 
-        print("\n================")
-        print("1. Fatorial")
-        print("2. Fibonacci")
-        print("0. sair")
-        print("================\n")
+        print("""\n================
+    1. Fatorial
+    2. Fibonacci
+    3. Sair
+    ================""")
 
         op = int(input("Escolha uma opção: "))
         print('')
