@@ -13,7 +13,7 @@ class Veiculo:
         return  f"Nome: {self.__nome}\nMarca: {self.__marca}\nFabricante: {self.__fabricante}\nAno: {self.__ano}\nCor: {self.__cor}"
     
     #setter
-    def cor_veiculo(self,cor):
+    def set_cor_veiculo(self,cor):
         self.__cor = cor
 
 # Heranças
@@ -29,6 +29,6 @@ class Carro(Veiculo):
 # Objetos 
 
 Carro = Carro('Camaro','toyota','jep',1800)
-Carro.cor_veiculo('Preto')
+Carro.set_cor_veiculo('Preto')
 Carro.carro_andando()
 print(Carro.ver_dados())
