@@ -1,0 +1,12 @@
+Um arquivo Python (com extensão .py) é um arquivo de texto que contém código escrito na linguagem Python,
+e pode ser executado pelo interpretador Python para realizar tarefas; 
+a manipulação desses arquivos envolve funções como open() para abrir arquivos (em modos como leitura 'r', escrita 'w', anexar 'a'),
+usando with para garantir o fechamento automático,
+e métodos como read() ou write() para interagir com o conteúdo,
+sendo fundamental para desenvolvimento, análise de dados e automação. Adicionando novas linhas com append
+Adicionando novas linhas com append
+Adicionando novas linhas com append
+Continuação da linha anteriorAdicionando novas linhas com append
+Continuação da linha anterior 1
+Adicionando novas linhas com append
+Continuação da linha anterior 1
